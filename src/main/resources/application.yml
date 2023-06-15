@@ -2,18 +2,18 @@ spring:
   datasource:
     password: password
     url: jdbc:mysql://localhost:3306/sales
-    username: root
+    username: user
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
 
   security:
     oauth2:
       client:
         registration:
          google:
-          clientId: YOUR_GOOGLE_CLIENT_ID
-          clientSecret: YOUR_GOOGLE_CLIENT_SECRET
+          clientId: 831478436297-0a5gk28qtdr8ok3n0s5fp8q2c7ijf23r.apps.googleusercontent.com
+          clientSecret: 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
           scope:
            - email
            - profile
